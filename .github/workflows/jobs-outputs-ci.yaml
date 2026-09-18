@@ -2,6 +2,10 @@ name: 02 - Job Outputs Demo
 
 on:
   workflow_dispatch:
+  push: 
+      branches:
+          - main
+          - feature
 
 jobs:
   deploy_job:

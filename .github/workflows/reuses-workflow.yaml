@@ -2,6 +2,10 @@ name: 03 - Reusable Workflow Outputs Demo
 
 on:
   workflow_dispatch:
+  push:
+    branches:
+      - main
+      - feature
 
 jobs:
   deploy_job:
