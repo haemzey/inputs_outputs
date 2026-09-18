@@ -5,10 +5,10 @@ on:
     outputs:
       deployment_url:
         description: Deployment URL
-        value: ${{ jobs.deploy-job.outputs.deployment_url }}
+        value: ${{ jobs.deploy_job.outputs.deployment_url }}
 
 jobs:
-  deploy-job:
+  deploy_job:
     runs-on: ubuntu-latest
     steps:
       - name: Deploy Application
